@@ -40,14 +40,3 @@ button {
 #checklist {
     padding-left: 20px;
 }
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .left,
-    .right {
-        width: 100%;
-    }
-}
