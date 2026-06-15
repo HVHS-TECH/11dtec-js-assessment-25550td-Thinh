@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+
+.left {
+    width: 75%;
+}
+
+#banner {
+    width: 100%;
+    display: block;
+}
+
+
+.right {
+    width: 25%;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#checklist {
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+}
