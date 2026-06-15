@@ -1,21 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>One More Sip</title>
+    <title>One More Sip</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <img src="image/cafeTask.png" id="banner">
-    <div class="container">
-        <div class="left">
-            
-    </div>
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
 
-  
-<script src="script.js"></script>
+<body>
+
+    <div class="container">
+
+        <div class="left">
+            <img src="image/cafeTask.png" id="banner">
+        </div>
+
+        <div class="right">
+
+            <ol>
+                <li>Caramel Latte - $4.50</li>
+                <li>Iced Coffee - $3.90</li>
+                <li>Cappuccino - $4.20</li>
+                <li>Americano - $3.50</li>
+                <li>New York Cheesecake - $4.80</li>
+                <li>Chocolate Cake - $4.50</li>
+                <li>Lemon Tart - $4.30</li>
+                <li>Blueberry Muffin - $3.20</li>
+                <li>Nuggets & Fries - $6.90</li>
+            </ol>
+
+            <p>Name:</p>
+            <input type="text" id="name">
+
+            <p>Amount:</p>
+            <input type="number" id="amount" value="1" min="1">
+
+            <button onclick="addOrder()">
+                Add to order
+            </button>
+
+            <h3>Checklist</h3>
+
+            <ul id="checklist"></ul>
+
+            <p>Total: <span id="total">$0.00</span></p>
+
+            <p>Money:</p>
+            <input type="number" id="money">
+
+            <p>Change: <span id="change">$0.00</span></p>
+
+            <button onclick="placeOrder()">
+                Place order
+            </button>
+
+            <p id="message"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
-
-
