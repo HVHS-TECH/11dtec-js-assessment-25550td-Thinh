@@ -22,8 +22,10 @@
                 <li>Nuggets & Fries - $6.90</li>
             </ol>
 
-            <p>Food Name:</p>
-            <input type="text" id="name">
+          <form onSubmit="return false;">
+          <label>Name:</label>
+          <input type="text" id="nameField">
+          <input type="submit" onClick="foodName()">
 
             <p>Amount:</p>
             <input type="number" id="amount" value="1" min="1">
