@@ -11,9 +11,19 @@ body {
     align-items: flex-start;
 }
 
+
+.left {
+    width: 75%;
+}
+
 #banner {
     width: 100%;
     display: block;
+}
+
+
+.right {
+    width: 25%;
 }
 
 input {
@@ -32,5 +42,3 @@ button {
 #checklist {
     padding-left: 20px;
 }
-
-
