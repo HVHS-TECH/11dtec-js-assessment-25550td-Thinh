@@ -7,6 +7,8 @@ console.log("My name is Thinh")
 
 // This is a single line comment
 
+//Variables
+
 //Main code
 
 
