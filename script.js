@@ -8,6 +8,17 @@ console.log("My name is Thinh")
 // This is a single line comment
 
 //Variables
+let menu= [ "Caramel Latte",
+            "Iced Coffee",
+            "Cappuccino",
+            "Americano",
+            "New York Cheesecake",
+            "Chocolate Cake",
+            "Lemon Tart",
+            "Blueberry Muffin",
+            "Nuggets & Fries",
+];
+
 
 //Main code
 
