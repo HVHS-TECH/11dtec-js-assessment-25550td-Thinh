@@ -22,6 +22,10 @@ let price = 5;
 
 
 //Main code
+function customerName(){
+    const name= document.getElementById("name").value;
+    console.log(name);
+}
 
 
 
