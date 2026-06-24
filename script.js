@@ -22,6 +22,10 @@ let price = 5;
 
 
 //Main code
+
+
+
+//Functions
 function customerName(){
     const name= document.getElementById("customerName").value;
     console.log(name);
@@ -30,9 +34,16 @@ function customerName(){
 function Output(name){
     document.getElementById("output").innerHTML= "Hello " + name + "! Welcome to our cafe!";
 }
-
-
-
-
-//Functions
-
+function displayMenu(){
+    let menuList= document.getElementById("item");
+    for (let i=0; i<menu.length; i++){
+        let option= document.createElement("option");
+        option.text= menu[i];
+        menuList.add(option);
+    }
+}
+function calculateTotal(){
+    let quantity= document.getElementById("quantity").value;
+    let total= quantity * price;
+    document.getElementById("total").innerHTML= "Total: $" + total;
+} 
