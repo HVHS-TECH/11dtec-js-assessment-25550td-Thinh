@@ -80,13 +80,12 @@ document.getElementById("total").textContent =
 
 document.getElementById("message").textContent =
     "Order added."
-```
 
 }
 
 function placeOrder() {
 
-```
+
 let money =
     Number(document.getElementById("money").value)
 
