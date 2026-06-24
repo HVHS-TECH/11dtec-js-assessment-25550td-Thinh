@@ -27,7 +27,9 @@ function customerName(){
     console.log(name);
     Output(name);
 }
-
+function Output(name){
+    document.getElementById("output").innerHTML= "Hello " + name + "! Welcome to our cafe!";
+}
 
 
 
