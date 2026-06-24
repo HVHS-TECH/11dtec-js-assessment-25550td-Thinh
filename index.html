@@ -17,30 +17,42 @@
 
         <div class="right">
 
+            <h2>Menu ($5 each)</h2>
+
             <ol>
-                <li>Caramel Latte - $4.50</li>
-                <li>Iced Coffee - $3.90</li>
-                <li>Cappuccino - $4.20</li>
-                <li>Americano - $3.50</li>
-                <li>New York Cheesecake - $4.80</li>
-                <li>Chocolate Cake - $4.50</li>
-                <li>Lemon Tart - $4.30</li>
-                <li>Blueberry Muffin - $3.20</li>
-                <li>Nuggets & Fries - $6.90</li>
+                <li>Caramel Latte</li>
+                <li>Iced Coffee</li>
+                <li>Cappuccino</li>
+                <li>Americano</li>
+                <li>New York Cheesecake</li>
+                <li>Chocolate Cake</li>
+                <li>Lemon Tart</li>
+                <li>Blueberry Muffin</li>
+                <li>Nuggets & Fries</li>
             </ol>
 
-            <p>Item:</p>
-            <input type="text" id="name">
+            <p>Customer Name:</p>
+            <input type="text" id="customerName">
+
+            <p>Choose an Item:</p>
+            <select id="item">
+                <option>Caramel Latte</option>
+                <option>Iced Coffee</option>
+                <option>Cappuccino</option>
+                <option>Americano</option>
+                <option>New York Cheesecake</option>
+                <option>Chocolate Cake</option>
+                <option>Lemon Tart</option>
+                <option>Blueberry Muffin</option>
+                <option>Nuggets & Fries</option>
+            </select>
 
             <p>Amount:</p>
             <input type="number" id="amount" value="1" min="1">
 
-            <button onclick="addOrder()">
-                Add to order
-            </button>
+            <button onclick="addOrder()">Add to Order</button>
 
             <h3>Checklist</h3>
-
             <ul id="checklist"></ul>
 
             <p>Total: <span id="total">$0.00</span></p>
@@ -50,19 +62,24 @@
 
             <p>Change: <span id="change">$0.00</span></p>
 
-            <button onclick="placeOrder()">
-                Place order
-            </button>
+            <button onclick="placeOrder()">Place Order</button>
+
+            <button onclick="resetOrder()">Reset Order</button>
 
             <p id="message"></p>
+
+            <h3>Receipt</h3>
+            <p id="receipt"></p>
 
         </div>
 
     </div>
 
     <script src="script.js"></script>
-<footer>
-    <h1>Thanks for visiting us</h1>
-</footer>
+
+    <footer>
+        <h1>Thanks for visiting us</h1>
+    </footer>
+
 </body>
 </html>

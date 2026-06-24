@@ -11,7 +11,6 @@ body {
     align-items: flex-start;
 }
 
-
 .left {
     width: 75%;
 }
@@ -20,17 +19,17 @@ body {
     width: 100%;
     display: block;
     border-radius: 10px;
-      transform: translateY(-6px);
+    transform: translateY(-6px);
     box-shadow: 0 10px 25px black;
     scroll-behavior: smooth;
 }
-
 
 .right {
     width: 25%;
 }
 
-input {
+input,
+select {
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
@@ -46,8 +45,16 @@ button {
 #checklist {
     padding-left: 20px;
 }
+
+#receipt {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+
 h1 {
-    font-size:50px;
+    font-size: 50px;
     color: black;
     text-align: center;
 }
