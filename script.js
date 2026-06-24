@@ -18,7 +18,7 @@ let menu= [ "Caramel Latte",
             "Blueberry Muffin",
             "Nuggets & Fries",
 ];
-let = 5
+let price = 5;
 
 
 //Main code
@@ -28,3 +28,4 @@ let = 5
 
 
 //Functions
+
