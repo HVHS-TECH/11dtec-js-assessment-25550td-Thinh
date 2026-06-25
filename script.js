@@ -32,7 +32,7 @@ function customerName(){
     Output(name);
 }
 function Output(name){
-    document.getElementById("output").innerHTML= "Hello " + name + "! Welcome to our cafe!";
+    document.getElementById("output").innerHTML= "<p>Hello " + name + "! Welcome to our cafe!</p>";
 }
 function displayMenu(){
     let menuList= document.getElementById("item");
@@ -46,4 +46,11 @@ function calculateTotal(){
     let quantity= document.getElementById("quantity").value;
     let total= quantity * price;
     document.getElementById("total").innerHTML= "Total: $" + total;
+} 
+function placeOrder(){
+    let name= document.getElementById("customerName").value;
+    let item= document.getElementById("item").value;
+    let quantity= document.getElementById("quantity").value;
+    let total= quantity * price;
+    document.getElementById("orderSummary").innerHTML= "<p>Thank you " + name + " for your order of " + quantity + " " + item + "(s). Your total is $" + total + ".</p>";
 } 
