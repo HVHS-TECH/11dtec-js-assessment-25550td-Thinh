@@ -30,14 +30,9 @@ let quantity= 0;
 //Functions
 function customerName(){
     const name = document.getElementById("customerName").value;
-   Output("Hello " + name + "! Welcome to One More Sip Cafe!");
+   Output("<p>Hello " + name + "! Welcome to One More Sip Cafe!</p>");
 }
 
 function Output(outputText){
     document.getElementById("output").innerHTML = outputText;
-    if (outputText === ""){
-        document.getElementById("output").style.display = "none";
-    } else {
-        document.getElementById("output").style.display = "block";
-    }
 }  
