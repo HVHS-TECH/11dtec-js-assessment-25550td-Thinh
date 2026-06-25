@@ -30,8 +30,11 @@ let quantity= 0;
 //Functions
 function customerName(){
     const name = document.getElementById("customerName").value;
-   Output("<p>Hello " + name + "! Welcome to One More Sip Cafe!</p>");
-   
+   Output("<p>Hello " + name + "!You are ready to order.</p>");
+   if (name === "") {
+    Output("<p>Please enter your name.</p>");
+    document.getElementById("output").style.color = "red";
+   }
 }
 
 function Output(outputText){
