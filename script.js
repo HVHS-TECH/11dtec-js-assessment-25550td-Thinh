@@ -29,15 +29,14 @@ let quantity= 0;
 
 //Functions
 function customerName(){
-    if(name === customerName){
-    const name= document.getElementById("customerName").value;
-    console.log(name);
-    Output(name);
+    const name = document.getElementById("customerName").value;
     if(name === ""){
         alert("Please enter your name!");
         return false;
-    } else {
-        document.getElementById("orderForm").style.display= "block";
+    }
+     else {
+        Output(name);
+        document.getElementById("customerName").value = "Welcome " + name + "! You are ready to order.";
     }
 }
 function Output(name){
