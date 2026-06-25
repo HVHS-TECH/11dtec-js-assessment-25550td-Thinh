@@ -31,7 +31,8 @@ let quantity= 0;
 function customerName(){
     const name = document.getElementById("customerName").value;
    Output("<p>Hello " + name + "!You are ready to order.</p>");
-   if (name === "") {
+   document.getElementById("output").style.color = "green";
+   if (name === ""|| name === null){ {
     Output("<p>Please enter your name.</p>");
     document.getElementById("output").style.color = "red";
    }
@@ -39,4 +40,5 @@ function customerName(){
 
 function Output(outputText){
     document.getElementById("output").innerHTML = outputText;
-}  
+}
+}
