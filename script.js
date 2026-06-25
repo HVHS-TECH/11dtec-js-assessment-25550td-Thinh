@@ -28,17 +28,20 @@ let quantity= 0;
 
 
 //Functions
-function customerName(){
-    const name = document.getElementById("customerName").value;
-   Output("<p>Hello " + name + "!You are ready to order.</p>");
-   document.getElementById("output").style.color = "green";
-   if (name === ""|| name === null){ {
-    Output("<p>Please enter your name.</p>");
-    document.getElementById("output").style.color = "red";
-   }
+function customerName() {
+  const name = document.getElementById("customerName").value.trim();
+  const outputElement = document.getElementById("output");
+  if (name === "") {
+    outputElement.innerHTML = "<p>Please enter your name.</p>";
+    outputElement.style.color = "red";
+  } else {
+    outputElement.innerHTML = `<p>Hello ${name}! You are ready to order.</p>`;
+    outputElement.style.color = "green";
+  }
 }
+
 
 function Output(outputText){
     document.getElementById("output").innerHTML = outputText;
 }
-}
+
