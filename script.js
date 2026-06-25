@@ -30,16 +30,14 @@ let quantity= 0;
 //Functions
 function customerName(){
     const name = document.getElementById("customerName").value;
-    if(name === ""){
-        alert("Please enter your name!");
-        return false;
+   Output("Hello " + name + "! Welcome to One More Sip Cafe!");
+}
+
+function Output(outputText){
+    document.getElementById("output").innerHTML = outputText;
+    if (outputText === ""){
+        document.getElementById("output").style.display = "none";
+    } else {
+        document.getElementById("output").style.display = "block";
     }
-     else {
-        Output(name);
-        document.getElementById("customerName").value = "Welcome " + name + "! You are ready to order.";
-    }
-}
-function Output(name){
-    document.getElementById("output").innerHTML= "<p>Hello " + name + "! Welcome to our cafe!You are ready to order.</p>";
-}
-}
+}  
