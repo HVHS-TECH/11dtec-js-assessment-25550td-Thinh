@@ -31,6 +31,7 @@ let quantity= 0;
 function customerName(){
     const name = document.getElementById("customerName").value;
    Output("<p>Hello " + name + "! Welcome to One More Sip Cafe!</p>");
+   
 }
 
 function Output(outputText){
