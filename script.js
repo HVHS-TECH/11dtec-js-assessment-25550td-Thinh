@@ -46,7 +46,7 @@ function Output(outputText){
 }
 
  function addOrder(){
-   if (item === "item" || amount === "amount") {
+   if (item === "Caramel Latte" || item === "Iced Coffee" || item === "Cappuccino" || item === "Americano" || item === "New York Cheesecake" || item === "Chocolate Cake" || item === "Lemon Tart" || item === "Blueberry Muffin" || item === "Nuggets & Fries") {
    Output="You have ordered " + amount + " " + item + "(s).";
    }
   }    
