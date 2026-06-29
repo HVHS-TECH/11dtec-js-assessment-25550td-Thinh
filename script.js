@@ -41,10 +41,14 @@ function customerName() {
   }
 }
 
-
 function Output(outputText){
     document.getElementById("output").innerHTML = outputText;
 }
 
+ function addOrder(){
+  
+   Output="You have ordered " + amount + " " + item + "(s).";
+   }    
+ 
 
 
