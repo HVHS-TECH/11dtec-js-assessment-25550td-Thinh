@@ -34,6 +34,7 @@ function customerName() {
   if (name === "") {
     outputElement.innerHTML = "<p>Please enter your name.</p>";
     outputElement.style.color = "red";
+    return;
   } else {
     outputElement.innerHTML = "<p>Hello " + name + "! You are ready to order.</p>";
     outputElement.style.color = "green";
@@ -44,4 +45,6 @@ function customerName() {
 function Output(outputText){
     document.getElementById("output").innerHTML = outputText;
 }
+
+
 
