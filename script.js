@@ -46,9 +46,10 @@ function Output(outputText){
 }
 
  function addOrder(){
-  
+   if (item === "item" || amount === "amount") {
    Output="You have ordered " + amount + " " + item + "(s).";
-   }    
+   }
+  }    
  
 
 
