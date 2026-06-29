@@ -46,10 +46,11 @@ function Output(outputText){
 }
 
  function addOrder(){
+   document.getElementById("addOrder").innerHTML
    if (item === "Caramel Latte" || item === "Iced Coffee" || item === "Cappuccino" || item === "Americano" || item === "New York Cheesecake" || item === "Chocolate Cake" || item === "Lemon Tart" || item === "Blueberry Muffin" || item === "Nuggets & Fries") {
-   Output="You have ordered " + amount + " " + item + "(s).";
+    Output("You have added " + " " + item + "(s) to your order.");  
    }
-  }    
+ }
  
 
 
