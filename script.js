@@ -45,5 +45,25 @@ function Output(outputText){
     document.getElementById("output").innerHTML = outputText;
 }
 
- function addOrder() {}
+function addOrder() {
+  const selectedItem = document.getElementById("item").value;
+  const amountInput = document.getElementById("amount");
+  const quantity = parseInt(amountInput.value, 10) || 1;
+  const checklist = document.getElementById("checklist");
+  const totalElement = document.getElementById("total");
+  const messageElement = document.getElementById("message");
+
+  const prices = {
+    "Caramel Latte": 4.5,
+    "Iced Coffee": 3.9,
+    "Cappuccino": 4.2,
+    "Americano": 3.5,
+    "New York Cheesecake": 4.8,
+    "Chocolate Cake": 4.5,
+    "Lemon Tart": 4.3,
+    "Blueberry Muffin": 3.2,
+    "Nuggets & Fries": 6.9
+  };
+
+
 
