@@ -52,7 +52,7 @@ function addOrder() {
   const checklist = document.getElementById("checklist");
   const totalElement = document.getElementById("total");
   const messageElement = document.getElementById("message");
-}
+  const outputElement = document.getElementById("output");
 
   const prices = {
     "Caramel Latte": 4.5,
@@ -67,7 +67,8 @@ function addOrder() {
   };
 
   outputElement.innerHTML = "☕You have ordered " + quantity + " " + selectedItem;
-  outputElement.innerHTML.style.color = "green";
+  outputElement.style.color = "green";
+}
 
 
 
