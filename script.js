@@ -32,7 +32,7 @@ function customerName() {
   const name = document.getElementById("customerName").value.trim();
   const outputElement = document.getElementById("output");
   if (name === "") {
-    outputElement.innerHTML = "<p>Please enter your name.</p>";
+    outputElement.innerHTML = "<p>⚠️Please enter your name.</p>";
     outputElement.style.color = "red";
     return;
   } else {
@@ -64,6 +64,10 @@ function addOrder() {
     "Blueberry Muffin": 3.2,
     "Nuggets & Fries": 6.9
   };
+  Output("☕You have ordered " + quantity + " " + selectedItem)
+  OutputElement.innerHTML.style.color = "green"
+  ;
+}
 
 
 
