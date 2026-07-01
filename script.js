@@ -64,9 +64,28 @@ function addOrder() {
     "Blueberry Muffin": 3.2,
     "Nuggets & Fries": 6.9
   };
-  Output("☕You have ordered " + quantity + " " + selectedItem)
-  OutputElement.innerHTML.style.color = "green"
-  ;
+
+  if (!prices.hasOwnProperty(selectedItem)) {
+    messageElement.innerHTML = "<p>⚠️Please select a valid item.</p>";
+    messageElement.style.color = "red";
+    return;
+  }
+
+  const itemPrice = prices[selectedItem];
+  const itemTotal = itemPrice * quantity;
+  total += itemTotal;
+
+  const listItem = document.createElement("li");
+  listItem.textContent = quantity + " x " + selectedItem + " - $" + itemTotal.toFixed(2);
+  checklist.appendChild(listItem);
+
+  totalElement.textContent = "Total: $" + total.toFixed(2);
+  messageElement.innerHTML = "<p>✅Order added successfully!</p>";
+  messageElement.style.color = "green";
+
+  const outputElement = document.getElementById("output");
+  outputElement.innerHTML = "☕You have ordered " + quantity + " " + selectedItem;
+  outputElement.innerHTML.style.color = "green";
 }
 
 
