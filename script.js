@@ -52,6 +52,7 @@ function addOrder() {
   const checklist = document.getElementById("checklist");
   const totalElement = document.getElementById("total");
   const messageElement = document.getElementById("message");
+}
 
   const prices = {
     "Caramel Latte": 4.5,
@@ -65,28 +66,9 @@ function addOrder() {
     "Nuggets & Fries": 6.9
   };
 
-  if (!prices.hasOwnProperty(selectedItem)) {
-    messageElement.innerHTML = "<p>⚠️Please select a valid item.</p>";
-    messageElement.style.color = "red";
-    return;
-  }
-
-  const itemPrice = prices[selectedItem];
-  const itemTotal = itemPrice * quantity;
-  total += itemTotal;
-
-  const listItem = document.createElement("li");
-  listItem.textContent = quantity + " x " + selectedItem + " - $" + itemTotal.toFixed(2);
-  checklist.appendChild(listItem);
-
-  totalElement.textContent = "Total: $" + total.toFixed(2);
-  messageElement.innerHTML = "<p>✅Order added successfully!</p>";
-  messageElement.style.color = "green";
-
-  const outputElement = document.getElementById("output");
   outputElement.innerHTML = "☕You have ordered " + quantity + " " + selectedItem;
   outputElement.innerHTML.style.color = "green";
-}
+
 
 
 
