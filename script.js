@@ -36,7 +36,7 @@ function customerName() {
     outputElement.style.color = "red";
     return;
   } else {
-    outputElement.innerHTML = "<p>Hello " + name + "! You are ready to order.</p>";
+    outputElement.innerHTML = "<p>✅Hello " + name + "! You are ready to order.</p>";
     outputElement.style.color = "green";
   }
 }
