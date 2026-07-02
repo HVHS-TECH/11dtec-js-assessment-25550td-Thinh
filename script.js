@@ -72,8 +72,6 @@ function addOrder() {
  function calculateTotal() {
   
   
-  
-  
 
 
 
