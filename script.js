@@ -69,6 +69,11 @@ function addOrder() {
   outputElement.innerHTML = "☕You have ordered " + quantity + " " + selectedItem;
   outputElement.style.color = "green";
 }
+ function calculateTotal() {
+  
+  
+  
+  
 
 
 
