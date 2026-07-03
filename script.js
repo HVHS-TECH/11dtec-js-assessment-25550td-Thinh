@@ -70,6 +70,7 @@ function addOrder() {
   outputElement.style.color = "green";
 }
 
-
+function totalPrice() {
+  
 
 
