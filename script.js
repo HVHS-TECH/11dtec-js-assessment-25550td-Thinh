@@ -71,6 +71,27 @@ function addOrder() {
 }
 
 function totalPrice() {
+  const item = document.getElementById("item").value;
+  const amount = parseInt(document.getElementById("amount").value, 10) || 1;
+  const prices = {
+    "Caramel Latte": 4.5,
+    "Iced Coffee": 3.9,
+    "Cappuccino": 4.2,
+    "Americano": 3.5,
+    "New York Cheesecake": 4.8,
+    "Chocolate Cake": 4.5,
+    "Lemon Tart": 4.3,
+    "Blueberry Muffin": 3.2,
+    "Nuggets & Fries": 6.9
+  };
+
+  if (item in prices) {
+    const itemPrice = prices[item];
+    const total = itemPrice * amount;
+    document.getElementById("total").innerHTML = "💰Total Price: $" + total.toFixed(2);
+  } else {
+    document.getElementById("total").innerHTML = "⚠️Please select a valid item.";
+  }
   
 
 
