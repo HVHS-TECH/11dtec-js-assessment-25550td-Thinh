@@ -54,4 +54,7 @@ function addOrder() {
 function placeOrder() {
  let name= document.getElementById("output").innerHTML
  let money= document.getElementById("total").innerHTML
+
+ if (name.trim() == "") {
+  
 }
