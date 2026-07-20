@@ -51,4 +51,6 @@ function addOrder() {
   document.getElementById("total").innerHTML =
     "$" + total.toFixed(2);
 }
-function 
+function placeOrder() {
+ let name= document.getElementById("output").innerHTML
+}
