@@ -55,6 +55,8 @@ function placeOrder() {
  let name= document.getElementById("output").innerHTML
  let money= document.getElementById("total").innerHTML
 
- if (name.trim() == "") {
-  
-}
+ if (name.trim() == " ") {
+   document.getElementById("output").innerHTML = "Please enter your name.";
+    return;
+  }
+  }
