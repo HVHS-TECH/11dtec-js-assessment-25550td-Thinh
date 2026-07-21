@@ -60,4 +60,4 @@ function placeOrder() {
     return;
   }
   }
-
+if (money<total) {
