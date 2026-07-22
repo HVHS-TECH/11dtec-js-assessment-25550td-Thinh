@@ -60,7 +60,6 @@ function placeOrder() {
     return;
   }
   if (money<total) {
-    document.getElementById("total").innerHTML = "You do not have enough money to place the order.";
-    return;
+ 
   }
 }
