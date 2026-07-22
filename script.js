@@ -59,4 +59,8 @@ function placeOrder() {
    document.getElementById("output").innerHTML = "Please enter your name.";
     return;
   }
+
+ if (money<total) {
+  document.getElementById("message").innerHTML = "You don't have enough money.";
+ } 
 }
