@@ -59,7 +59,4 @@ function placeOrder() {
    document.getElementById("output").innerHTML = "Please enter your name.";
     return;
   }
-  if (money>total) {
-    document.getElementById("output").innerHTML = "Thank you for your order, " + name + "! Your total is " + money + ".";
-  }
 }
