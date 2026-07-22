@@ -59,4 +59,12 @@ function placeOrder() {
    document.getElementById("output").innerHTML = "Please enter your name.";
     return;
   }
+ 
+if (money<total) {
+  document.getElementById("output").innerHTML = "You do not have enough money to place the order.";
+  return;
+}
+
+document.getElementById("output").innerHTML =
+  "Thank you for your order, " + name + "! Your total is $" + total.toFixed(2) + ".";
 }
