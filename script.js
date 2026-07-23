@@ -65,5 +65,28 @@ let money = Number(document.getElementById("money").value);
   
   let change = money - total;
   document.getElementById("change").innerHTML= "$" + change.toFixed(2);
+  document.getElementById("receipt").innerHTML =
+    "Customer: " + name +
+    "<br>Total: $" + total.toFixed(2) +
+    "<br>Money: $" + money.toFixed(2) +
+    "<br>Change: $" + change.toFixed(2);
+      document.getElementById("message").innerHTML =
+    "Thank you, " + name + "!";
 } 
+}
+function resetOrder() {
+  function resetOrder() {
+
+  total = 0;
+
+  document.getElementById("checklist").innerHTML = "";
+  document.getElementById("total").innerHTML = "$0.00";
+  document.getElementById("change").innerHTML = "$0.00";
+  document.getElementById("receipt").innerHTML = "";
+  document.getElementById("message").innerHTML = "";
+  document.getElementById("output").innerHTML = "";
+  document.getElementById("customerName").value = "";
+  document.getElementById("money").value = "";
+  document.getElementById("amount").value = 1;
+}
 }
