@@ -58,6 +58,7 @@ function placeOrder() {
   document.getElementById("change").innerHTML = "$" + change.toFixed(2);
   document.getElementById("receipt").innerHTML = "Customer: " + name + "<br>Total: $" + total.toFixed(2) + "<br>Money: $" + money.toFixed(2) + "<br>Change: $" + change.toFixed(2);
   document.getElementById("message").innerHTML = "Thank you, " + name + "!";
+  
 }
 
 function resetOrder() {
