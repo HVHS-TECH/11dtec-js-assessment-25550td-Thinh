@@ -1,100 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
-    <h2>Welcome to my cafe!</h2>
-</header>
 <head>
+    <meta charset="UTF-8">
     <title>One More Sip</title>
     <link rel="stylesheet" href="style.css">
-   <link rel="icon" type="image/png" href="image/latte-art.png">
-
+    <link rel="icon" type="image/png" href="image/latte-art.png">
 </head>
-
 <body>
+    <header>
+        <h2>Welcome to my cafe!</h2>
+    </header>
 
+    <div class="container">
+        <div class="left">
+            <img src="image./cafeTask.png" id="banner" alt="Cafe Banner">
+        </div>
+        
+        <div class="right">
+            <h2>Menu</h2>
+            <ol>
+                <li>Caramel Latte - $4.50</li>
+                <li>Iced Coffee - $3.90</li>
+                <li>Cappuccino - $4.20</li>
+                <li>Americano - $3.50</li>
+                <li>New York Cheesecake - $4.80</li>
+                <li>Chocolate Cake - $4.50</li>
+                <li>Lemon Tart - $4.30</li>
+                <li>Blueberry Muffin - $3.20</li>
+                <li>Nuggets & Fries - $6.90</li>
+            </ol>
 
-<div class="container">
+            <p>Customer Name:</p>
+            <input type="text" id="customerName" placeholder="Enter your name">
+            <button onclick="submitName()">Submit</button>
+            <p id="output"></p>
 
-    <div class="left">
-        <img src="image./cafeTask.png" id="banner">
+            <p>Choose an Item:</p>
+            <select id="item">
+                <option>Caramel Latte</option>
+                <option>Iced Coffee</option>
+                <option>Cappuccino</option>
+                <option>Americano</option>
+                <option>New York Cheesecake</option>
+                <option>Chocolate Cake</option>
+                <option>Lemon Tart</option>
+                <option>Blueberry Muffin</option>
+                <option>Nuggets & Fries</option>
+            </select>
+
+            <p>Amount:</p>
+            <input type="number" id="amount" value="1" min="1">
+            <button onclick="addOrder()">Add to Order</button>
+
+            <h3>Checklist</h3>
+            <ul id="checklist"></ul>
+            <p>Total: <span id="total">$0.00</span></p>
+
+            <p>Money:</p>
+            <input type="number" id="money">
+            <p>Change: <span id="change">$0.00</span></p>
+            
+            <button onclick="placeOrder()" id="placeOrderButton">Place Order</button>
+            <button onclick="resetOrder()" id="resetOrderButton">Reset Order</button>
+            
+            <p id="message"></p>
+            <h3>Receipt</h3>
+            <p id="receipt"></p>
+        </div>
     </div>
 
-    <div class="right">
+    <footer>
+        <h1>Thanks for visiting us</h1>
+    </footer>
 
-        <h2>Menu</h2>
-
-        <ol>
-            <li>Caramel Latte - $4.50</li>
-            <li>Iced Coffee - $3.90</li>
-            <li>Cappuccino - $4.20</li>
-            <li>Americano - $3.50</li>
-            <li>New York Cheesecake - $4.80</li>
-            <li>Chocolate Cake - $4.50</li>
-            <li>Lemon Tart - $4.30</li>
-            <li>Blueberry Muffin - $3.20</li>
-            <li>Nuggets & Fries - $6.90</li>
-        </ol>
-
-        <p>Customer Name:</p>
-        <input type="text" id="customerName" placeholder="Enter your name">
-        <button onclick="customerName()">
-            Submit
-        </button>
-        <p id="output"></p>
-
-        <p>Choose an Item:</p>
-        <select id="item">
-            <option>Caramel Latte</option>
-            <option>Iced Coffee</option>
-            <option>Cappuccino</option>
-            <option>Americano</option>
-            <option>New York Cheesecake</option>
-            <option>Chocolate Cake</option>
-            <option>Lemon Tart</option>
-            <option>Blueberry Muffin</option>
-            <option>Nuggets & Fries</option>
-        </select>
-
-        <p>Amount:</p>
-        <input type="number" id="amount" value="1" min="1">
-
-        <button onclick="addOrder()">
-            Add to Order
-        </button>
-
-        <h3>Checklist</h3>
-        <ul id="checklist"></ul>
-
-        <p>Total: <span id="total">$0.00</span></p>
-
-        <p>Money:</p>
-        <input type="number" id="money">
-
-        <p>Change: <span id="change">$0.00</span></p>
-
-        <button onclick="placeOrder()" id="placeOrderButton">
-            Place Order
-        </button>
-
-        <button onclick="resetOrder()" id="resetOrderButton">
-            Reset Order
-        </button>
-
-        <p id="message"></p>
-
-        <h3>Receipt</h3>
-        <p id="receipt"></p>
-
-    </div>
-
-</div>
-
-<script src="script.js"></script>
-
-<footer>
-    <h1>Thanks for visiting us</h1>
-</footer>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
