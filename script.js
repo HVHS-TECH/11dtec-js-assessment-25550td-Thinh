@@ -62,5 +62,7 @@ let money = Number(document.getElementById("money").value);
  if (money<total) {
   document.getElementById("message").innerHTML = "You don't have enough money.";
   return;
+
+  
 } 
 }
