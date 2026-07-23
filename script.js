@@ -52,8 +52,8 @@ function addOrder() {
     "$" + total.toFixed(2);
 }
 function placeOrder() {
- let name = document.getElementById("")
-
+ let name = document.getElementById("customerName").value;
+let money = Number(document.getElementById("money").value);
  if (name.trim() == " ") {
    document.getElementById("output").innerHTML = "Please enter your name.";
     return;
@@ -61,5 +61,6 @@ function placeOrder() {
 
  if (money<total) {
   document.getElementById("message").innerHTML = "You don't have enough money.";
+  return;
 } 
 }
