@@ -52,8 +52,7 @@ function addOrder() {
     "$" + total.toFixed(2);
 }
 function placeOrder() {
- let name= document.getElementById("output").innerHTML
- let money= document.getElementById("total").innerHTML
+ let name = document.getElementById("")
 
  if (name.trim() == " ") {
    document.getElementById("output").innerHTML = "Please enter your name.";
