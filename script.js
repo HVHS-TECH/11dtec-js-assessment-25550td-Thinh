@@ -20,7 +20,7 @@ const prices = {
 };
 
 // Functions
-function customerName() {
+function submitName() {
   let name = document.getElementById("customerName").value;
   if (name.trim() === "") {
     document.getElementById("output").innerHTML = "Please enter your name.";
@@ -33,8 +33,14 @@ function addOrder() {
   let item = document.getElementById("item").value;
   let amount = Number(document.getElementById("amount").value);
   let cost = prices[item] * amount;
+  
   total += cost;
   document.getElementById("checklist").innerHTML += "<li>" + amount + " x " + item + "</li>";
+  
+  updateTotalDisplay();
+}
+
+function updateTotalDisplay() {
   document.getElementById("total").innerHTML = "$" + total.toFixed(2);
 }
 
@@ -42,23 +48,29 @@ function placeOrder() {
   let name = document.getElementById("customerName").value;
   let money = Number(document.getElementById("money").value);
   
- 
   if (name.trim() === "") {
     document.getElementById("output").innerHTML = "Please enter your name.";
     return;
   }
   
-
   if (money < total) {
     document.getElementById("message").innerHTML = "You don't have enough money.";
-    return; 
+    return;
   }
   
   let change = money - total;
   document.getElementById("change").innerHTML = "$" + change.toFixed(2);
-  document.getElementById("receipt").innerHTML = "Customer: " + name + "<br>Total: $" + total.toFixed(2) + "<br>Money: $" + money.toFixed(2) + "<br>Change: $" + change.toFixed(2);
   document.getElementById("message").innerHTML = "Thank you, " + name + "!";
   
+  generateReceipt(name, money, change);
+}
+
+function generateReceipt(customerName, cashGiven, moneyChange) {
+  document.getElementById("receipt").innerHTML = 
+    "Customer: " + customerName + "<br>" +
+    "Total: $" + total.toFixed(2) + "<br>" +
+    "Money: $" + cashGiven.toFixed(2) + "<br>" +
+    "Change: $" + moneyChange.toFixed(2);
 }
 
 function resetOrder() {
