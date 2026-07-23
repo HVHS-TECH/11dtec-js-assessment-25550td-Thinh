@@ -63,5 +63,7 @@ let money = Number(document.getElementById("money").value);
   document.getElementById("message").innerHTML = "You don't have enough money.";
   return;
   
+  let change = money - total;
+  document.getElementById("change").innerHTML= "$" + change.toFixed(2);
 } 
 }
